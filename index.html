@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 26 - HTML5 Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="http://www.mysite.com/select.php" method="post">
+        
+        <fieldset>
+            <legend>Your info</legend>
+            <div class="row">
+                <label>Name : </label>
+                <input type="text" name="name" size="40" maxlength="256" placeholder="Your name">
+            </div>
+            <div class="row">
+                <label>Date of birth : </label>
+                <input type="date" name="dob">
+            </div>
+            <div class="row">
+                <label>Email : </label>
+                <input type="email" name="email" placeholder="Your email">
+            </div>
+            <div class="row">
+                <label>Web site : </label>
+                <input type="url" name="website" placeholder="http://www.">
+            </div>
+            <div class="row">
+                <label>Code : </label>
+                <input type="password" name="code" value="................">
+            </div>
+            <div class="row">
+                <label>Man : </label>
+                <input type="radio" name="gender" value="man">
+            </div>
+            <div class="row">
+                <label>Woman : </label>
+                <input type="radio" name="gender" value="woman">
+            </div>
+            <div class="row">
+                <label>Your country : </label>
+                <select name="country">
+                    <option value="" disabled selected>Your country</option>
+                    <option value="France">France</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your taste</legend>
+            <div class="row">
+                <label>Apples : </label>
+                <input type="checkbox" name="taste" value="apples">
+            </div>
+            <div class="row">
+                <label>Peaches : </label>
+                <input type="checkbox" name="taste" value="peaches">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Send your photo</legend>
+            <div class="row">
+                <label>Choose a file: </label>
+                <input type="file" name="photo">
+            </div>
+            <div class="buttons">
+                <button type="submit">Send</button>
+                <button type="reset">Erase all data</button>
+            </div>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
