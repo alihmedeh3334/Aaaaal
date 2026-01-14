@@ -1,0 +1,45 @@
+body {
+    font-family: serif;
+    font-size: 14px;
+    padding: 20px;
+}
+
+form {
+    width: 450px;
+}
+
+fieldset {
+    border: 1px solid #777;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.row {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.row label {
+    width: 100px;
+    display: inline-block;
+}
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], select {
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+button {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
